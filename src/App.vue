@@ -29,11 +29,11 @@ export default {
 </header>
 
 <main>
-<!-- <MainCmpnnt/> -->
+<MainCmpnnt/>
 </main>
 
 <footer>
-<!-- <FooterCmpnnt/> -->
+<FooterCmpnnt/>
 </footer>
 
 </template>
@@ -55,5 +55,10 @@ footer{
   min-height: 60vh;
   background-color: $footer-bg;
 
+}
+
+.my-container{
+  width: 1000px;
+  margin: 0 auto;
 }
 </style>
