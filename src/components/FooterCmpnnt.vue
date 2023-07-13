@@ -16,23 +16,24 @@ export default {
                 {img:"buy-dc-power-visa.svg",
                  text:"power visa"}
             ],
-                footerLinks:[
-                    {name:"dc comics",
-                     links:["characters","comics","movies",
-                        "TV","games","videos", "news"]
-                    },
-                    {name:"shop",
-                     links:["shop dc","shop dc collectibles"]
-                    },
-                    {name:"dc",
-                     links:["terms of use","privacy policy",
-                     "ad choices","advertising","jobs","subscriptions",
-                     "talent workshop","CPSC certificates","ratings","shop help",
-                     "contact us"]
-                    },
-                    {name:"sites",
-                     links:["DC","MAD magazine","DC kids","DC universe", "DC power visa"]}
-                ]
+            footerLinks:[
+                {name:"dc comics",
+                    links:["characters","comics","movies",
+                    "TV","games","videos", "news"]
+                },
+                {name:"shop",
+                    links:["shop dc","shop dc collectibles"]
+                },
+                {name:"dc",
+                    links:["terms of use","privacy policy",
+                    "ad choices","advertising","jobs","subscriptions",
+                    "talent workshop","CPSC certificates","ratings","shop help",
+                    "contact us"]
+                },
+                {name:"sites",
+                    links:["DC","MAD magazine","DC kids","DC universe", "DC power visa"]}
+            ],
+            socials:["footer-facebook.png","footer-periscope.png","footer-pinterest.png","footer-twitter.png","footer-youtube.png"]
 
         }
     },
@@ -116,7 +117,40 @@ export default {
     </section>
 
     
-    <section>
+    <section class="footer-bottom">
+
+        <div class="my-container">
+
+            <nav>
+
+                <div class="sign-up">
+                    sign-up
+                </div>
+    
+           
+                <div class="follow-us">
+
+                    <h3>follow us</h3>
+
+                    <ul>
+
+                        <li v-for="singleSocial in socials">
+
+                            <div class="img-container">
+                                
+                                <img :src="getImgPath(`../assets/img/${singleSocial}`)" alt="">
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+    
+            </nav>
+
+        </div>
     
     </section>
 
@@ -225,6 +259,60 @@ export default {
                 }
             }
         }
+    }
+}
+
+.footer-bottom{
+    width: 100%;
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .sign-up{
+            border: 2px solid $dc-blue;
+            color: white;
+            padding: 0.7rem;
+        }
+
+        .follow-us{
+            max-width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-shrink: 0;
+            justify-content: space-between;
+            align-items: center;
+
+            h3{
+                color: $dc-blue;
+            }
+
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-grow: 1;
+
+                li{
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                    .img-container{
+                        height: 2rem;
+    
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
     }
 }
 
