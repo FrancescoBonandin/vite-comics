@@ -1,2 +1,7 @@
 @use './partials/reset' as *;
 @use './partials/variables' as *;
+
+.my-container{
+    width: 1000px;
+    margin: 0 auto;
+}

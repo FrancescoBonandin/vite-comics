@@ -1,9 +1,9 @@
 <script>
-import blueBarCmpnnt from './blueBarCmpnnt.vue';
+import BlueBarCmpnnt from './BlueBarCmpnnt.vue';
 
 export default {
     components:{
-        blueBarCmpnnt
+        BlueBarCmpnnt
 
     },
     data(){
@@ -41,7 +41,7 @@ export default {
 
 <template>
 
-    <blueBarCmpnnt/>
+    <BlueBarCmpnnt/>
     
     <section class="jumbotron">
 
@@ -55,7 +55,7 @@ export default {
 
             <nav class="left-jumbo-nav">
                 
-                <div v-for="(linksBlock,i) in footerLinks">
+                <div v-for="(linksBlock,i) in footerLinks ">
 
                     <h4>
                         {{ linksBlock.name }}   

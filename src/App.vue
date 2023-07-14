@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss" >
 @use './assets/scss/main' as *;
-@import './assets/scss/partials/variables';
+@use './assets/scss/partials/variables' as *;
 
 header{
   background-color: white;
@@ -57,8 +57,5 @@ footer{
 
 }
 
-.my-container{
-  width: 1000px;
-  margin: 0 auto;
-}
+
 </style>
