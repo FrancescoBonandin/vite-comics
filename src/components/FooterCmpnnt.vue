@@ -55,7 +55,7 @@ export default {
 
             <nav class="left-jumbo-nav">
                 
-                <div v-for="(linksBlock,i) in footerLinks ">
+                <div v-for="(linksBlock,i) in footerLinks " :key=i>
 
                     <h4>
                         {{ linksBlock.name }}   

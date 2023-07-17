@@ -110,7 +110,7 @@ export default {
             <div class="comic-cards">
 
                 <CardCmpnnt v-for="singleComic in comics"
-
+                    :key=i
                     :img="singleComic.thumb"
                     :title="singleComic.series"        
 
